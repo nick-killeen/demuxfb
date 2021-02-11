@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demuxfb.media &#8212; demuxfb  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="demuxfb.message" href="message.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>demuxfb  documentation</span></a></h1>
+        <h2 class="heading"><span>demuxfb.media</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="message.html">demuxfb.message</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="module-demuxfb.media">
+<span id="demuxfb-media"></span><h1>demuxfb.media<a class="headerlink" href="#module-demuxfb.media" title="Permalink to this headline">¶</a></h1>
+<p>Module to define media types a message can contain.</p>
+<dl class="py class">
+<dt id="demuxfb.media.AttachmentFile">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">AttachmentFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attachment_file_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.AttachmentFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.AttachmentFile.creation_timestamp">
+<code class="sig-name descname">creation_timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.media.AttachmentFile.creation_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="demuxfb.media.AttachmentFile.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.AttachmentFile.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="demuxfb.media.AudioFile">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">AudioFile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">audio_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.AudioFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.AudioFile.creation_timestamp">
+<code class="sig-name descname">creation_timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.media.AudioFile.creation_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="demuxfb.media.AudioFile.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.AudioFile.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="demuxfb.media.Gif">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">Gif</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gif_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.Gif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.Gif.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.Gif.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="demuxfb.media.Photo">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">Photo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">photo_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.Photo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.Photo.creation_timestamp">
+<code class="sig-name descname">creation_timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.media.Photo.creation_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="demuxfb.media.Photo.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.Photo.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="demuxfb.media.Sticker">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">Sticker</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sticker_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.Sticker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.Sticker.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.Sticker.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="demuxfb.media.Video">
+<em class="property">class </em><code class="sig-prename descclassname">demuxfb.media.</code><code class="sig-name descname">Video</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">video_json</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.media.Video" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="demuxfb.media.Video.creation_timestamp">
+<code class="sig-name descname">creation_timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.media.Video.creation_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="demuxfb.media.Video.thumbnail_uri">
+<code class="sig-name descname">thumbnail_uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.Video.thumbnail_uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="demuxfb.media.Video.uri">
+<code class="sig-name descname">uri</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.media.Video.uri" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="message.html">demuxfb.message</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Nicholas Killeen.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.1.
+    </div>
+  </body>
+</html>

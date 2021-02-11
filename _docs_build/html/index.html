@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome &#8212; demuxfb  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="demuxfb" href="demuxfb.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="#">
+          <span>demuxfb  documentation</span></a></h1>
+        <h2 class="heading"><span>Welcome</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="demuxfb.html">demuxfb</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="welcome">
+<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="readme-md">
+<h1>README.md<a class="headerlink" href="#readme-md" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="demuxfb-demultiplex-exported-facebook-json-chat-data">
+<h2>demuxfb - demultiplex exported facebook json chat data!<a class="headerlink" href="#demuxfb-demultiplex-exported-facebook-json-chat-data" title="Permalink to this headline">¶</a></h2>
+<p>demuxfb is a Python package to reframe conversations from Facebook ‘Download
+Your Information’ json dumps into a more exact form, accounting for the
+different categorizations of messages that the json metadata itself does not
+distinguish.</p>
+<div class="section" id="motivation">
+<h3>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h3>
+<p>Facebook chats are very feature-rich. All within a chat, there may be polls,
+events, video and audio calls, embedded games, and more. But the Facebook
+‘Download Your Data’ exportation format fails to reflect these features; many
+distinct categories of messages are structurally indistinguishable from
+ordinary text messages.</p>
+<p>When analysing the dataset, should an automated event reminder, ‘Reminder, 30
+minutes until 10 PM.’, be treated the same as a human-written message? This
+should be up to the analyst to decide, not the exportation format.</p>
+</div>
+<div class="section" id="scope">
+<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h3>
+<p>This package defines a method to ‘parse’ Facebook JSON data for single chats
+into a more useful and complete representative form. This form is intended to
+be used an intermediary for analysis on the dataset.</p>
+<p>We achieve this by string-matching message content to known schemas for the
+special feature-driven messages. The JSON messages in the original time series
+are promoted into appropriate Python classes according to these rules.</p>
+<p>This process is limited in several ways.</p>
+<ul class="simple">
+<li><p>It is difficult to establish a formal spec of what these schemas are – we are
+on the outside, so it has been up to human inference on a limited dataset. So,
+given this difficulty in verification, the rules may be wrong or incomplete in
+the first place, or may silently become obsolete in future Facebook updates.</p></li>
+<li><p>Facebook features are region-specific. Currently, this package assumes an
+Australian dataset, so the inbuilt rules will fail to detect things like
+sending money through messenger (a U.S. feature).</p></li>
+<li><p>The Facebook exporter compresses the natural data. For example, Alice typing
+‘Alice waved hello to the group.’ is impossible to distinguish from Alice
+using the wave feature. We take a parsimonious approach in these kinds of
+situations where there is no single correct answer, even though different
+or more complex procedures may emperically be better in the relevant context.</p></li>
+</ul>
+<p>Expect misclassification.</p>
+</div>
+<div class="section" id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>The recommended approach is to copy the src/demuxfb folder to wherever you’re
+using it, and just put <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">demuxfb</span></code> as with any other source package. This
+allows you to easily modify the source to suit your exact needs, if necessary
+(see <a class="reference external" href="#Modification">Modification</a>).</p>
+<p>Alternatively, if it suits your current needs as is, you can install the package
+locally by cloning the repository and typing</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">dist</span><span class="o">/</span><span class="n">demuxfb</span><span class="o">-</span><span class="n">VER</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">VER</span></code> points to a valid version in the <code class="docutils literal notranslate"><span class="pre">dist/</span></code> folder (e.g. <code class="docutils literal notranslate"><span class="pre">2020.12.15</span></code>,
+representing the version that was developed against a Facebook archive generated
+at that date).</p>
+<p>TODO Python version!</p>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>You can download your Facebook data at <a class="reference external" href="https://www.facebook.com/dyi/">https://www.facebook.com/dyi/</a>. Before
+beginning the download, you must set the file format to ‘JSON’ and confirm
+that the ‘Messages’ option is checked.</p>
+<p>Once the archive has been generated and you have downloaded it, unzip it.
+Your chats should then be located in the <code class="docutils literal notranslate"><span class="pre">messages/inbox/</span></code> and
+<code class="docutils literal notranslate"><span class="pre">messages/archived_threads/</span></code> subfolders. From here, a simple usage example would
+be as follows.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span> <span class="nn">demuxfb</span>
+
+<span class="c1"># 1. Point to where the conversation will be fed in from the disk.</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;C:/users/nicho/downloads/facebook-nicholaskilleen/&#39;</span>
+            <span class="s1">&#39;messages/inbox/ourchat_95kldfjg4&#39;</span><span class="p">)</span>
+<span class="n">feed</span> <span class="o">=</span> <span class="n">demuxfb</span><span class="o">.</span><span class="n">ChatFolderFeed</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+
+<span class="c1"># 2. Create the chat (takes a while, reports progress to stdout).</span>
+<span class="n">chat</span> <span class="o">=</span> <span class="n">demuxfb</span><span class="o">.</span><span class="n">build_chat</span><span class="p">(</span><span class="n">feed</span><span class="p">,</span> <span class="s1">&#39;Nicholas Killeen&#39;</span><span class="p">)</span>
+
+<span class="c1"># 3. Do some stub analysis with it.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of text messages in the conversation:&#39;</span><span class="p">,</span>
+      <span class="nb">len</span><span class="p">([</span><span class="n">message</span> <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="n">chat</span><span class="o">.</span><span class="n">messages</span>
+           <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">demuxfb</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">TextMessage</span><span class="p">)]))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<p>The documentation is available online at TODO. You can also read it in source or
+with <code class="docutils literal notranslate"><span class="pre">help(demuxfb)</span></code> in Python, or can compile it with Sphinx by using the
+Makefile in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
+</div>
+<div class="section" id="id1">
+<h3>Modification<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>You may want to extend or modify demuxfb’s vocabulary to work better with your
+dataset. This is not possible to do through the package interface, so you will
+need to modify the source. This section can help get you started.</p>
+<p>demuxfb works by iterating through all JSON messages, for each consulting an
+ordered list of rules until one of them ‘matches’ the current JSON iterate and
+produces an appropriate message object. It is these rules that define the
+parsing logic, so they will generally be the focus of any modifications or
+additions you would like to make.</p>
+<p>All rules are defined in the <code class="docutils literal notranslate"><span class="pre">src/demuxfb/_rules.py</span></code> file. For example, consider
+the scenario of wanting to recognize JSON snippets similar to the following as
+<code class="docutils literal notranslate"><span class="pre">PlanDeletionMessages</span></code>:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+  &#39;sender_name&#39;: &#39;Jacob Smith&#39;,
+  &#39;timestamp_ms&#39;: 1478855024210,
+  &#39;content&#39;: &#39;Jake deleted the plan Saturday Hangout for Sat, Aug 5 at 12 PM.&#39;,
+  &#39;type&#39;: &#39;Generic&#39;
+}
+</pre></div>
+</div>
+<p>Then, in the <code class="docutils literal notranslate"><span class="pre">src/demuxfb/_rules.py</span></code> file, we might have the following rule:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@_register_rule</span><span class="p">()</span>
+<span class="k">def</span> <span class="nf">_match_plan_deletion_message</span><span class="p">(</span><span class="n">cf</span><span class="p">:</span> <span class="s1">&#39;_ChatFactory&#39;</span>
+                                 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Optional</span><span class="p">[</span><span class="n">msg</span><span class="o">.</span><span class="n">PlanDeletionMessage</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">cf</span><span class="o">.</span><span class="n">match</span><span class="p">([</span><span class="n">_Tok</span><span class="o">.</span><span class="n">SENDER_ALIAS</span><span class="p">,</span> <span class="s1">&#39; deleted the plan &#39;</span><span class="p">,</span> <span class="n">_Tok</span><span class="o">.</span><span class="n">PLAN_TITLE</span><span class="p">,</span>
+                 <span class="s1">&#39; for &#39;</span><span class="p">,</span>  <span class="n">_Tok</span><span class="o">.</span><span class="n">PLAN_DATE_TIME</span><span class="p">]):</span>
+        <span class="n">message</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">make_common</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">PlanDeletionMessage</span><span class="p">)</span>
+        <span class="n">message</span><span class="o">.</span><span class="n">plan_title</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">captures</span><span class="p">[</span><span class="n">_Tok</span><span class="o">.</span><span class="n">PLAN_TITLE</span><span class="p">]</span>
+        <span class="n">message</span><span class="o">.</span><span class="n">plan_date_time</span> <span class="o">=</span> <span class="n">cf</span><span class="o">.</span><span class="n">captures</span><span class="p">[</span><span class="n">_Tok</span><span class="o">.</span><span class="n">PLAN_DATE_TIME</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">message</span>
+
+    <span class="k">return</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>All rules are registered with the <code class="docutils literal notranslate"><span class="pre">&#64;_register_rule</span></code> decorator. The order in which
+these registrations appear in source will correspond to the precedence of rules,
+more general rules being defined at the bottom of the file.</p>
+<p>Rules have two possible return types: they return <code class="docutils literal notranslate"><span class="pre">None</span></code> to indicate their
+non-applicability to the current state, causing demuxfb to move on to the next
+rule; or they instantiate and return a specialized message object which will be
+copied to the output structure (here <code class="docutils literal notranslate"><span class="pre">PlanDeletionMessage</span></code>). These types are
+defined in the <code class="docutils literal notranslate"><span class="pre">src/demuxfb/message.py</span></code> file, where you are free to add your own
+or change the existing ones.</p>
+<p>Rules take in a single <code class="docutils literal notranslate"><span class="pre">_ChatFactory</span></code> argument that encompasses the world state.
+This state persists throughout the sequential parsing process, and includes:</p>
+<ul class="simple">
+<li><p>A <code class="docutils literal notranslate"><span class="pre">message_json</span></code> property that contains the current JSON that is meant to be
+turned into a message.</p></li>
+<li><p>An identity manager for the participants in the conversation.</p></li>
+<li><p>Token definitions (which <em>can</em> be updated dynamically, though no rule
+currently makes use of this).</p></li>
+<li><p>Scoping variables, such as <code class="docutils literal notranslate"><span class="pre">plan_is_active</span></code> – one might expect that a genuine
+plan deletion event will not occur if there does not exist an ongoing plan, so,
+we can set and unset this variable when we recognize plan deletion and
+creation events and use it accordingly (see the actual
+<code class="docutils literal notranslate"><span class="pre">_match_plan_deletion_message</span></code> in source for an example).</p></li>
+</ul>
+<p>The relevant documentation for this starts at the definition of <code class="docutils literal notranslate"><span class="pre">_ChatFactory</span></code>
+in the <code class="docutils literal notranslate"><span class="pre">src/demuixfb/_chat.py</span></code> file, but an explicit visit there is not
+immediately necessary, since the existing rules in <code class="docutils literal notranslate"><span class="pre">src/demuxfb/_rules.py</span></code>
+exemplify the repetitive use of small collection of patterns.</p>
+</div>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        <a class="uplink" href="#">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="demuxfb.html">demuxfb</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Nicholas Killeen.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "participants": [
+        {
+            "name": "Daniel"
+        },
+        {
+            "name": "Henry"
+        }
+    ],
+    "messages": [
+        {
+            "sender_name": "Henry",
+            "timestamp_ms": 1566296965500,
+            "content": "25: Hi",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Daniel",
+            "timestamp_ms": 1566296964000,
+            "content": "24: Hello",
+            "type": "Generic"
+        }
+    ],
+    "title": "Daniel",
+    "is_still_participant": true,
+    "thread_type": "Regular",
+    "thread_path": "inbox/Daniel_blah"
+}

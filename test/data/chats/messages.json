@@ -1,0 +1,46 @@
+{
+    "participants": [
+        {
+            "name": "Daniel"
+        },
+        {
+            "name": "Henry"
+        }
+    ],
+    "messages": [
+        {
+            "sender_name": "Daniel",
+            "timestamp_ms": 1566296943820,
+            "content": "You?",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Daniel",
+            "timestamp_ms": 1566296938824,
+            "content": "Doing alright",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Henry",
+            "timestamp_ms": 1566296834426,
+            "content": "How are you?",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Daniel",
+            "timestamp_ms": 1306316867000,
+            "content": "Hey how are you?",
+            "type": "Generic"
+        },
+        {
+            "sender_name": "Henry",
+            "timestamp_ms": 1306315450000,
+            "content": "Hey",
+            "type": "Generic"
+        }
+    ],
+    "title": "Daniel",
+    "is_still_participant": true,
+    "thread_type": "Regular",
+    "thread_path": "inbox/Daniel_blah"
+}

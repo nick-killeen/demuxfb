@@ -55,9 +55,7 @@ pip install dist/demuxfb-VER.tar.gz
 
 where `VER` points to a valid version in the `dist/` folder (e.g. `2020.12.15`,
 representing the version that was developed against a Facebook archive generated
-at that date).
-
-TODO Python version!
+at that date). This should work for Python 3.8+.
 
 ## Usage
 You can download your Facebook data at https://www.facebook.com/dyi/. Before

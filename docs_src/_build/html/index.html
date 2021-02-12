@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome &#8212; demuxfb  documentation</title>
+    <title>Contents &#8212; demuxfb  documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -18,7 +18,7 @@
   </head><body>
       <div class="header" role="banner"><h1 class="heading"><a href="#">
           <span>demuxfb  documentation</span></a></h1>
-        <h2 class="heading"><span>Welcome</span></h2>
+        <h2 class="heading"><span>Contents</span></h2>
       </div>
       <div class="topnav" role="navigation" aria-label="top navigation">
       
@@ -32,8 +32,8 @@
       <div class="content" role="main">
         
         
-  <div class="section" id="welcome">
-<h1>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
 <li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
@@ -41,6 +41,12 @@
 </ul>
 <div class="toctree-wrapper compound">
 </div>
+</div>
+<div class="section" id="links">
+<h1>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Github: <a class="reference external" href="https://github.com/nick-killeen/demuxfb">https://github.com/nick-killeen/demuxfb</a></p></li>
+</ul>
 </div>
 <div class="section" id="readme-md">
 <h1>README.md<a class="headerlink" href="#readme-md" title="Permalink to this headline">¶</a></h1>
@@ -91,7 +97,7 @@ or more complex procedures may emperically be better in the relevant context.</p
 <p>The recommended approach is to copy the src/demuxfb folder to wherever you’re
 using it, and just put <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">demuxfb</span></code> as with any other source package. This
 allows you to easily modify the source to suit your exact needs, if necessary
-(see <a class="reference external" href="#Modification">Modification</a>).</p>
+(see the <a class="reference external" href="#modification">Modification section</a>).</p>
 <p>Alternatively, if it suits your current needs as is, you can install the package
 locally by cloning the repository and typing</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">dist</span><span class="o">/</span><span class="n">demuxfb</span><span class="o">-</span><span class="n">VER</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
@@ -131,12 +137,12 @@ be as follows.</p>
 </div>
 <div class="section" id="documentation">
 <h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
-<p>The documentation is available online at TODO. You can also read it in source or
-with <code class="docutils literal notranslate"><span class="pre">help(demuxfb)</span></code> in Python, or can compile it with Sphinx by using the
-Makefile in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
+<p>The documentation is available online at <a class="reference external" href="https://nick-killeen.github.io/demuxfb/">https://nick-killeen.github.io/demuxfb/</a>.
+You can also read it in source or with <code class="docutils literal notranslate"><span class="pre">help(demuxfb)</span></code> in Python, or can compile
+it with Sphinx by using the Makefile in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> directory.</p>
 </div>
-<div class="section" id="id1">
-<h3>Modification<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="modification">
+<h3>Modification<a class="headerlink" href="#modification" title="Permalink to this headline">¶</a></h3>
 <p>You may want to extend or modify demuxfb’s vocabulary to work better with your
 dataset. This is not possible to do through the package interface, so you will
 need to modify the source. This section can help get you started.</p>
@@ -148,12 +154,12 @@ additions you would like to make.</p>
 <p>All rules are defined in the <code class="docutils literal notranslate"><span class="pre">src/demuxfb/_rules.py</span></code> file. For example, consider
 the scenario of wanting to recognize JSON snippets similar to the following as
 <code class="docutils literal notranslate"><span class="pre">PlanDeletionMessages</span></code>:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
-  &#39;sender_name&#39;: &#39;Jacob Smith&#39;,
-  &#39;timestamp_ms&#39;: 1478855024210,
-  &#39;content&#39;: &#39;Jake deleted the plan Saturday Hangout for Sat, Aug 5 at 12 PM.&#39;,
-  &#39;type&#39;: &#39;Generic&#39;
-}
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;sender_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Jacob Smith&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;timestamp_ms&quot;</span><span class="p">:</span> <span class="mi">1478855024210</span><span class="p">,</span>
+  <span class="nt">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Jake deleted the plan Saturday Hangout for Sat, Aug 5 at 12 PM.&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Generic&quot;</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <p>Then, in the <code class="docutils literal notranslate"><span class="pre">src/demuxfb/_rules.py</span></code> file, we might have the following rule:</p>

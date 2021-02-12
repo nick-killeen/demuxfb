@@ -44,7 +44,7 @@ Expect misclassification.
 The recommended approach is to copy the src/demuxfb folder to wherever you're
 using it, and just put `import demuxfb` as with any other source package. This
 allows you to easily modify the source to suit your exact needs, if necessary
-(see [Modification](#Modification)).
+(see the [Modification section](#modification)).
 
 Alternatively, if it suits your current needs as is, you can install the package
 locally by cloning the repository and typing
@@ -87,9 +87,9 @@ print('Number of text messages in the conversation:',
            if isinstance(message, demuxfb.message.TextMessage)]))
 ```
 ## Documentation
-The documentation is available online at TODO. You can also read it in source or
-with `help(demuxfb)` in Python, or can compile it with Sphinx by using the
-Makefile in the `docs/` directory.
+The documentation is available online at https://nick-killeen.github.io/demuxfb/.
+You can also read it in source or with `help(demuxfb)` in Python, or can compile
+it with Sphinx by using the Makefile in the `docs/` directory.
 
 ## Modification
 You may want to extend or modify demuxfb's vocabulary to work better with your
@@ -108,10 +108,10 @@ the scenario of wanting to recognize JSON snippets similar to the following as
 
 ```json
 {
-  'sender_name': 'Jacob Smith',
-  'timestamp_ms': 1478855024210,
-  'content': 'Jake deleted the plan Saturday Hangout for Sat, Aug 5 at 12 PM.',
-  'type': 'Generic'
+  "sender_name": "Jacob Smith",
+  "timestamp_ms": 1478855024210,
+  "content": "Jake deleted the plan Saturday Hangout for Sat, Aug 5 at 12 PM.",
+  "type": "Generic"
 }
 ```
 

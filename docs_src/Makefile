@@ -19,13 +19,14 @@ help:
 website: Makefile 
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	cp ".nojekyll" "$(BUILDDIR)/html/.nojekyll"
-	cp -r "$(BUILDDIR)/html" "./../docs"
+	cp -r "$(BUILDDIR)/html/." "./../docs"
 
 # Windows version of "website" target.
 websitewin: Makefile
 	@$(SPHINXBUILD) -M html "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 	copy ".nojekyll" "$(BUILDDIR)/html/.nojekyll"
-	copy -r "$(BUILDDIR)/html" "./../docs"
+	xcopy /i /y /s /e "$(BUILDDIR)/html/." "./../docs/"
+
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).

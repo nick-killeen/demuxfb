@@ -41,21 +41,26 @@ This process is limited in several ways.
 Expect misclassification.
 
 ## Installation
-The recommended approach is to copy the src/demuxfb folder to wherever you're
-using it, and just put `import demuxfb` as with any other source package. This
-allows you to easily modify the source to suit your exact needs, if necessary
-(see the [Modification section](#modification)).
+The recommended approach is to download the repository and copy the src/demuxfb
+folder to wherever you're using it, and just put `import demuxfb` as with any
+other source package. This allows you to easily modify the source to suit your
+exact needs, if necessary (see the [Modification section](#modification)).
 
-Alternatively, if it suits your current needs as is, you can install the package
-locally by cloning the repository and typing
+Alternatively, if you're happy to use the code as is, you can download binaries
+from the [Releases page](https://github.com/nick-killeen/demuxfb/releases). The
+date components of the version numbers signify that the release was built
+against a Facebook archive dataset generated on that date. It is recommended
+that you use fresh Facebook archives and the most recent release.
+
+After choosing a version, the binary can be installed with
 
 ```
-pip install dist/demuxfb-VER.tar.gz
+pip install demuxfb-VER.tar.gz
 ```
 
-where `VER` points to a valid version in the `dist/` folder (e.g. `2020.12.15`,
-representing the version that was developed against a Facebook archive generated
-at that date). This should work for Python 3.8+.
+This should work for Python 3.8+, and may incidentally be compatible with
+earlier Python 3 releases.
+
 
 ## Usage
 You can download your Facebook data at https://www.facebook.com/dyi/. Before

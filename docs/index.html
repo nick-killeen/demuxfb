@@ -94,18 +94,21 @@ or more complex procedures may emperically be better in the relevant context.</p
 </div>
 <div class="section" id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
-<p>The recommended approach is to copy the src/demuxfb folder to wherever you’re
-using it, and just put <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">demuxfb</span></code> as with any other source package. This
-allows you to easily modify the source to suit your exact needs, if necessary
-(see the <a class="reference external" href="#modification">Modification section</a>).</p>
-<p>Alternatively, if it suits your current needs as is, you can install the package
-locally by cloning the repository and typing</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">dist</span><span class="o">/</span><span class="n">demuxfb</span><span class="o">-</span><span class="n">VER</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<p>The recommended approach is to download the repository and copy the src/demuxfb
+folder to wherever you’re using it, and just put <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">demuxfb</span></code> as with any
+other source package. This allows you to easily modify the source to suit your
+exact needs, if necessary (see the <a class="reference external" href="#modification">Modification section</a>).</p>
+<p>Alternatively, if you’re happy to use the code as is, you can download binaries
+from the <a class="reference external" href="https://github.com/nick-killeen/demuxfb/releases">Releases page</a>. The
+date components of the version numbers signify that the release was built
+against a Facebook archive dataset generated on that date. It is recommended
+that you use fresh Facebook archives and the most recent release.</p>
+<p>After choosing a version, the binary can be installed with</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">demuxfb</span><span class="o">-</span><span class="n">VER</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 </pre></div>
 </div>
-<p>where <code class="docutils literal notranslate"><span class="pre">VER</span></code> points to a valid version in the <code class="docutils literal notranslate"><span class="pre">dist/</span></code> folder (e.g. <code class="docutils literal notranslate"><span class="pre">2020.12.15</span></code>,
-representing the version that was developed against a Facebook archive generated
-at that date). This should work for Python 3.8+.</p>
+<p>This should work for Python 3.8+, and may incidentally be compatible with
+earlier Python 3 releases.</p>
 </div>
 <div class="section" id="usage">
 <h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>

@@ -1,6 +1,9 @@
 # Private test conversation data
 convo
 
+# Local, hackish development tools
+.local_tools
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -72,7 +75,7 @@ instance/
 .scrapy
 
 # Sphinx documentation
-docs/_build/
+docs_src/_build/
 
 # PyBuilder
 .pybuilder/

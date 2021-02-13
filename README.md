@@ -92,7 +92,7 @@ print('Number of text messages in the conversation:',
 ## Documentation
 The documentation is available online at https://nick-killeen.github.io/demuxfb/.
 You can also read it in source or with `help(demuxfb)` in Python, or can compile
-it with Sphinx by using the Makefile in the `docs/` directory.
+it with Sphinx by using the Makefile in the `docs_src/` directory.
 
 ## Modification
 You may want to extend or modify demuxfb's vocabulary to work better with your

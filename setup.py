@@ -18,7 +18,7 @@ setuptools.setup(
     url='https://github.com/nick-killeen/demuxfb',
     license='MIT',
     package_dir={'': 'src'},
-    packages=setuptools.find_packages(include=['demuxfb', 'demuxfb.*']),
+    packages=setuptools.find_packages(where="src", include=['demuxfb', 'demuxfb.*']),
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',

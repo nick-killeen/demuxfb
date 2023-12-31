@@ -119,15 +119,15 @@ def test_call_messages():
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.CallStartMessage)
-    assert message.call_type == demuxfb.message.CallType.AUDIO
+    assert message.call_type == demuxfb.message.CallType.CALL
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.CallJoinMessage)
-    assert message.call_type == demuxfb.message.CallType.AUDIO
+    assert message.call_type == demuxfb.message.CallType.CALL
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.CallEndMessage)
-    assert message.call_type == demuxfb.message.CallType.AUDIO
+    assert message.call_type == demuxfb.message.CallType.CALL
 
 
 def test_match_nickname_change_message():
@@ -292,12 +292,12 @@ def test_plan_messages():
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.PlanUpdateMessage)
     assert message.new_plan_title == 'Saturday Hangout'
-    assert message.new_plan_time is None
+    assert message.new_plan_date_time is None
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.PlanUpdateMessage)
     assert message.new_plan_title is None
-    assert message.new_plan_time == 'Sat, Aug 5 at 12 PM'
+    assert message.new_plan_date_time == 'Sat, Aug 5 at 12 PM'
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.PlanRespondencyMessage)
@@ -305,7 +305,7 @@ def test_plan_messages():
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.PlanDeletionMessage)
     assert message.plan_title == 'Saturday Hangout'
-    assert message.plan_time == 'Sat, Aug 5 at 12 PM'
+    assert message.plan_date_time == 'Sat, Aug 5 at 12 PM'
 
     message = messages.pop(0)
     assert isinstance(message, demuxfb.message.TextMessage)

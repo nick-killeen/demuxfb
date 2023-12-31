@@ -46,9 +46,6 @@ def _register_rule() -> Callable[[_Rule], None]:
 @_register_rule()
 def _match_media_message(cf: '_ChatFactory'
                          ) -> Optional[msg.MediaMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if any([cf.message_json.get(key) is not None
             for key in ['photos', 'gifs', 'audio_files', 'videos', 'sticker',
                         'files']]):
@@ -77,9 +74,6 @@ def _match_media_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_empty_message(cf: '_ChatFactory'
                          ) -> Optional[msg.EmptyMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if 'content' not in cf.message_json:
         message = cf.make_common(msg.EmptyMessage)
         return message
@@ -90,9 +84,6 @@ def _match_empty_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_call_start_message(cf: '_ChatFactory'
                               ) -> Optional[msg.CallStartMessage]:
-    if not cf.type_matches('Generic') and not cf.type_matches('Call'):
-        return None
-
     if cf.state.call_is_active:
         return None
 
@@ -114,9 +105,6 @@ def _match_call_start_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_call_join_message(cf: '_ChatFactory'
                              ) -> Optional[msg.CallJoinMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.call_is_active:
         return None
 
@@ -136,9 +124,6 @@ def _match_call_join_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_call_share_video_message(cf: '_ChatFactory'
                                     ) -> Optional[msg.CallShareVideoMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.call_is_active:
         return None
 
@@ -153,9 +138,6 @@ def _match_call_share_video_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_call_end_message(cf: '_ChatFactory'
                             ) -> Optional[msg.CallEndMessage]:
-    if not cf.type_matches('Generic') and not cf.type_matches('Call'):
-        return None
-
     if not cf.state.call_is_active:
         return None
 
@@ -177,9 +159,6 @@ def _match_call_end_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_nickname_change_message(cf: '_ChatFactory'
                                    ) -> Optional[msg.NicknameChangeMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, r' cleared (?:his|her|their) own nickname\.'
                  ]):
         message = cf.make_common(msg.NicknameChangeMessage)
@@ -234,9 +213,6 @@ def _match_nickname_change_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_chat_settings_change_message(
         cf: '_ChatFactory') -> Optional[msg.ChatSettingsChangeMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' named the group ', _Tok.ANYTHING]):
         message = cf.make_common(msg.ChatSettingsChangeMessage)
         message.settings_type = msg.ChatSettingsType.CHANGE_NAME
@@ -295,9 +271,6 @@ def _match_chat_settings_change_message(
 @_register_rule()
 def _match_plan_creation_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.PlanCreationMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.state.plan_is_active:
         return None
 
@@ -313,9 +286,6 @@ def _match_plan_creation_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_plan_update_message(cf: '_ChatFactory'
                                ) -> Optional[msg.PlanUpdateMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.plan_is_active:
         return None
 
@@ -338,9 +308,6 @@ def _match_plan_update_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_plan_deletion_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.PlanDeletionMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.plan_is_active:
         return None
 
@@ -366,9 +333,6 @@ def _match_plan_deletion_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_plan_respondency_message(cf: '_ChatFactory'
                                     ) -> Optional[msg.PlanRespondencyMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.plan_is_active:
         return None
 
@@ -382,9 +346,6 @@ def _match_plan_respondency_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_plan_reminder_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.PlanReminderMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if not cf.state.plan_is_active:
         return None
 
@@ -425,9 +386,6 @@ def _match_plan_reminder_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_poll_creation_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.PollCreationMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' created a poll: ', _Tok.ANYTHING]):
         message = cf.make_common(msg.PollCreationMessage)
         message.poll_name = cf.captures[_Tok.ANYTHING]
@@ -439,9 +397,6 @@ def _match_poll_creation_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_poll_add_vote_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.PollAddVoteMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' voted for "', _Tok.POLL_OPTION, '" and ',
                  _Tok.NUMBER, ' other options? in the poll: ', _Tok.POLL_NAME]):
         message = cf.make_common(msg.PollAddVoteMessage)
@@ -464,9 +419,6 @@ def _match_poll_add_vote_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_poll_remove_vote_message(cf: '_ChatFactory'
                                     ) -> Optional[msg.PollRemoveVoteMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS,
                  ' removed (?:your |his |her |their )?vote for "',
                  _Tok.POLL_OPTION, '" and ', _Tok.NUMBER,
@@ -492,9 +444,6 @@ def _match_poll_remove_vote_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_poll_change_vote_message(cf: '_ChatFactory'
                                     ) -> Optional[msg.PollChangeVoteMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS,
                  ' changed (?:your |his |her |their )?vote to "',
                  _Tok.POLL_OPTION, ' in the poll: ', _Tok.POLL_NAME]):
@@ -509,9 +458,6 @@ def _match_poll_change_vote_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_poll_expired_message(cf: '_ChatFactory'
                                 ) -> Optional[msg.PollExpiredMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([r'This poll is no longer available\.']):
         message = cf.make_common(msg.PollExpiredMessage)
         return message
@@ -522,9 +468,6 @@ def _match_poll_expired_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_admin_add_message(cf: '_ChatFactory'
                              ) -> Optional[msg.AdminAddMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' added ', _Tok.PARTICIPANT_NAME,
                  r' as a group admin\.']):
         message = cf.make_common(msg.AdminAddMessage)
@@ -539,9 +482,6 @@ def _match_admin_add_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_admin_remove_message(cf: '_ChatFactory'
                                 ) -> Optional[msg.AdminRemoveMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' removed ', _Tok.PARTICIPANT_NAME,
                  r' as a group admin\.']):
         message = cf.make_common(msg.AdminRemoveMessage)
@@ -556,9 +496,6 @@ def _match_admin_remove_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_app_new_score_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.AppNewScoreMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, '(?: just)? scored ', _Tok.APP_SCORE,
                  ' (?:point |points )?(?:in|playing) ', _Tok.APP_NAME]):
         message = cf.make_common(msg.AppNewScoreMessage)
@@ -582,9 +519,6 @@ def _match_app_new_score_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_app_leaderboard_reshuffle_message(
         cf: '_ChatFactory') -> Optional[msg.AppLeaderboardReshuffleMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' moved up the leaderboard in ',
                  _Tok.APP_NAME]):
         message = cf.make_common(msg.AppLeaderboardReshuffleMessage)
@@ -605,9 +539,6 @@ def _match_app_leaderboard_reshuffle_message(
 @_register_rule()
 def _match_app_challenge_message(cf: '_ChatFactory'
                                  ) -> Optional[msg.AppChallengeMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     if cf.match([_Tok.SENDER_ALIAS, ' challenged you in ', _Tok.APP_NAME]):
         message = cf.make_common(msg.AppChallengeMessage)
         message.app_name = cf.captures[_Tok.APP_NAME]
@@ -619,9 +550,6 @@ def _match_app_challenge_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_text_message(cf: '_ChatFactory'
                         ) -> Optional[msg.TextMessage]:
-    if not cf.type_matches('Generic'):
-        return None
-
     message = cf.make_common(msg.TextMessage)
     return message
 
@@ -629,9 +557,6 @@ def _match_text_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_subscribe_message(cf: '_ChatFactory'
                              ) -> Optional[msg.SubscribeMessage]:
-    if not cf.type_matches('Subscribe'):
-        return None
-
     message = cf.make_common(msg.SubscribeMessage)
     message.inviter = message.sender
     message.invitees = [cf.participant_manager.request_participant(
@@ -643,9 +568,6 @@ def _match_subscribe_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_unsubscribe_message(cf: '_ChatFactory'
                                ) -> Optional[msg.UnsubscribeMessage]:
-    if not cf.type_matches('Unsubscribe'):
-        return None
-
     if cf.match([_Tok.PARTICIPANT_NAME, r' left the group\.']):
         message = cf.make_common(msg.UnsubscribeMessage)
         message.removed_self = True
@@ -668,9 +590,6 @@ def _match_unsubscribe_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_wave_message(cf: '_ChatFactory'
                         ) -> Optional[msg.WaveMessage]:
-    if not cf.type_matches('Share'):
-        return None
-
     if cf.match([_Tok.PARTICIPANT_FIRST_NAME, r' waved hello to the group\.']):
         message = cf.make_common(msg.WaveMessage)
         return message
@@ -681,9 +600,6 @@ def _match_wave_message(cf: '_ChatFactory'
 @_register_rule()
 def _match_link_message(cf: '_ChatFactory'
                         ) -> Optional[msg.LinkMessage]:
-    if not cf.type_matches('Share'):
-        return None
-
     message = cf.make_common(msg.LinkMessage)
     if 'share' in cf.message_json:
         message.shared_link = cf.message_json['share'].get('shared_link')

@@ -1,17 +1,16 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>demuxfb.message &#8212; demuxfb  documentation</title>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=f63d8bfa" />
+    <link rel="stylesheet" type="text/css" href="_static/haiku.css?v=e491ac2d" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="demuxfb.media" href="media.html" />
@@ -35,706 +34,506 @@
       <div class="content" role="main">
         
         
-  <div class="section" id="module-demuxfb.message">
-<span id="demuxfb-message"></span><h1>demuxfb.message<a class="headerlink" href="#module-demuxfb.message" title="Permalink to this headline">¶</a></h1>
+  <section id="module-demuxfb.message">
+<span id="demuxfb-message"></span><h1>demuxfb.message<a class="headerlink" href="#module-demuxfb.message" title="Link to this heading">¶</a></h1>
 <p>Module to define types of message structures to generate.</p>
 <dl class="py class">
-<dt id="demuxfb.message.AdminAddMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">AdminAddMessage</code><a class="headerlink" href="#demuxfb.message.AdminAddMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.AdminAddMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">AdminAddMessage</span></span><a class="headerlink" href="#demuxfb.message.AdminAddMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.AdminAddMessage.instigator">
-<code class="sig-name descname">instigator</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.AdminAddMessage.instigator" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AdminAddMessage.instigator">
+<span class="sig-name descname"><span class="pre">instigator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.AdminAddMessage.instigator" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.AdminAddMessage.subject">
-<code class="sig-name descname">subject</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.AdminAddMessage.subject" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="demuxfb.message.AdminRemoveMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">AdminRemoveMessage</code><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.AdminRemoveMessage.instigator">
-<code class="sig-name descname">instigator</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage.instigator" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.AdminRemoveMessage.subject">
-<code class="sig-name descname">subject</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage.subject" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AdminAddMessage.subject">
+<span class="sig-name descname"><span class="pre">subject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.AdminAddMessage.subject" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.AppChallengeMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">AppChallengeMessage</code><a class="headerlink" href="#demuxfb.message.AppChallengeMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.AdminRemoveMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">AdminRemoveMessage</span></span><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.AppChallengeMessage.app_name">
-<code class="sig-name descname">app_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.AppChallengeMessage.app_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AdminRemoveMessage.instigator">
+<span class="sig-name descname"><span class="pre">instigator</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage.instigator" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.AdminRemoveMessage.subject">
+<span class="sig-name descname"><span class="pre">subject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.AdminRemoveMessage.subject" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.AppLeaderboardReshuffleMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">AppLeaderboardReshuffleMessage</code><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.AppChallengeMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">AppChallengeMessage</span></span><a class="headerlink" href="#demuxfb.message.AppChallengeMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.AppLeaderboardReshuffleMessage.app_name">
-<code class="sig-name descname">app_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage.app_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.AppLeaderboardReshuffleMessage.now_in_first_place">
-<code class="sig-name descname">now_in_first_place</code><em class="property">: bool</em><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage.now_in_first_place" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AppChallengeMessage.app_name">
+<span class="sig-name descname"><span class="pre">app_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.AppChallengeMessage.app_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.AppNewScoreMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">AppNewScoreMessage</code><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.AppLeaderboardReshuffleMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">AppLeaderboardReshuffleMessage</span></span><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.AppNewScoreMessage.app_name">
-<code class="sig-name descname">app_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.app_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AppLeaderboardReshuffleMessage.app_name">
+<span class="sig-name descname"><span class="pre">app_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage.app_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.AppNewScoreMessage.personal_best">
-<code class="sig-name descname">personal_best</code><em class="property">: bool</em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.personal_best" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.AppNewScoreMessage.score">
-<code class="sig-name descname">score</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.score" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AppLeaderboardReshuffleMessage.now_in_first_place">
+<span class="sig-name descname"><span class="pre">now_in_first_place</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#demuxfb.message.AppLeaderboardReshuffleMessage.now_in_first_place" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.CallEndMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">CallEndMessage</code><a class="headerlink" href="#demuxfb.message.CallEndMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.AppNewScoreMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">AppNewScoreMessage</span></span><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.CallEndMessage.call_type">
-<code class="sig-name descname">call_type</code><em class="property">: <a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType">demuxfb.message.CallType</a></em><a class="headerlink" href="#demuxfb.message.CallEndMessage.call_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.AppNewScoreMessage.app_name">
+<span class="sig-name descname"><span class="pre">app_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.app_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.AppNewScoreMessage.personal_best">
+<span class="sig-name descname"><span class="pre">personal_best</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.personal_best" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.AppNewScoreMessage.score">
+<span class="sig-name descname"><span class="pre">score</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.AppNewScoreMessage.score" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.CallJoinMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">CallJoinMessage</code><a class="headerlink" href="#demuxfb.message.CallJoinMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.CallEndMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">CallEndMessage</span></span><a class="headerlink" href="#demuxfb.message.CallEndMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.CallJoinMessage.call_type">
-<code class="sig-name descname">call_type</code><em class="property">: <a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType">demuxfb.message.CallType</a></em><a class="headerlink" href="#demuxfb.message.CallJoinMessage.call_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.CallEndMessage.call_type">
+<span class="sig-name descname"><span class="pre">call_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType"><span class="pre">CallType</span></a></em><a class="headerlink" href="#demuxfb.message.CallEndMessage.call_type" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.CallShareVideoMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">CallShareVideoMessage</code><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.CallJoinMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">CallJoinMessage</span></span><a class="headerlink" href="#demuxfb.message.CallJoinMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.CallShareVideoMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage.content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.CallShareVideoMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.CallShareVideoMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.CallShareVideoMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.CallShareVideoMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.CallJoinMessage.call_type">
+<span class="sig-name descname"><span class="pre">call_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType"><span class="pre">CallType</span></a></em><a class="headerlink" href="#demuxfb.message.CallJoinMessage.call_type" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.CallStartMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">CallStartMessage</code><a class="headerlink" href="#demuxfb.message.CallStartMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.CallShareVideoMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">CallShareVideoMessage</span></span><a class="headerlink" href="#demuxfb.message.CallShareVideoMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.CallStartMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">CallStartMessage</span></span><a class="headerlink" href="#demuxfb.message.CallStartMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.CallStartMessage.call_type">
-<code class="sig-name descname">call_type</code><em class="property">: <a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType">demuxfb.message.CallType</a></em><a class="headerlink" href="#demuxfb.message.CallStartMessage.call_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.CallStartMessage.call_type">
+<span class="sig-name descname"><span class="pre">call_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#demuxfb.message.CallType" title="demuxfb.message.CallType"><span class="pre">CallType</span></a></em><a class="headerlink" href="#demuxfb.message.CallStartMessage.call_type" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.CallType">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">CallType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.message.CallType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<dt class="sig sig-object py" id="demuxfb.message.CallType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">CallType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.message.CallType" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>An enumeration.</p>
 <dl class="py attribute">
-<dt id="demuxfb.message.CallType.CALL">
-<code class="sig-name descname">CALL</code><em class="property"> = 1</em><a class="headerlink" href="#demuxfb.message.CallType.CALL" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.CallType.CALL">
+<span class="sig-name descname"><span class="pre">CALL</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#demuxfb.message.CallType.CALL" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.CallType.VIDEO">
-<code class="sig-name descname">VIDEO</code><em class="property"> = 2</em><a class="headerlink" href="#demuxfb.message.CallType.VIDEO" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.CallType.VIDEO">
+<span class="sig-name descname"><span class="pre">VIDEO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#demuxfb.message.CallType.VIDEO" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.ChatSettingsChangeMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">ChatSettingsChangeMessage</code><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsChangeMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">ChatSettingsChangeMessage</span></span><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsChangeMessage.new_approval_is_required_policy">
-<code class="sig-name descname">new_approval_is_required_policy</code><em class="property">: Optional<span class="p">[</span>bool<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_approval_is_required_policy" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsChangeMessage.new_approval_is_required_policy">
+<span class="sig-name descname"><span class="pre">new_approval_is_required_policy</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_approval_is_required_policy" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsChangeMessage.new_emoji">
-<code class="sig-name descname">new_emoji</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_emoji" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsChangeMessage.new_emoji">
+<span class="sig-name descname"><span class="pre">new_emoji</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_emoji" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsChangeMessage.new_name">
-<code class="sig-name descname">new_name</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsChangeMessage.new_name">
+<span class="sig-name descname"><span class="pre">new_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.new_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsChangeMessage.settings_type">
-<code class="sig-name descname">settings_type</code><em class="property">: <a class="reference internal" href="#demuxfb.message.ChatSettingsType" title="demuxfb.message.ChatSettingsType">demuxfb.message.ChatSettingsType</a></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.settings_type" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsChangeMessage.settings_type">
+<span class="sig-name descname"><span class="pre">settings_type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#demuxfb.message.ChatSettingsType" title="demuxfb.message.ChatSettingsType"><span class="pre">ChatSettingsType</span></a></em><a class="headerlink" href="#demuxfb.message.ChatSettingsChangeMessage.settings_type" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.ChatSettingsType">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">ChatSettingsType</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.message.ChatSettingsType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">enum.Enum</span></code></p>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">ChatSettingsType</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#demuxfb.message.ChatSettingsType" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
 <p>An enumeration.</p>
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsType.CHANGE_EMOJI">
-<code class="sig-name descname">CHANGE_EMOJI</code><em class="property"> = 2</em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_EMOJI" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType.CHANGE_EMOJI">
+<span class="sig-name descname"><span class="pre">CHANGE_EMOJI</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">2</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_EMOJI" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsType.CHANGE_MEMBERSHIP_POLICY">
-<code class="sig-name descname">CHANGE_MEMBERSHIP_POLICY</code><em class="property"> = 3</em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_MEMBERSHIP_POLICY" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType.CHANGE_MEMBERSHIP_POLICY">
+<span class="sig-name descname"><span class="pre">CHANGE_MEMBERSHIP_POLICY</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_MEMBERSHIP_POLICY" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsType.CHANGE_NAME">
-<code class="sig-name descname">CHANGE_NAME</code><em class="property"> = 4</em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_NAME" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType.CHANGE_NAME">
+<span class="sig-name descname"><span class="pre">CHANGE_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">4</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_NAME" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsType.CHANGE_PHOTO">
-<code class="sig-name descname">CHANGE_PHOTO</code><em class="property"> = 5</em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_PHOTO" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType.CHANGE_PHOTO">
+<span class="sig-name descname"><span class="pre">CHANGE_PHOTO</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">5</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_PHOTO" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.ChatSettingsType.CHANGE_THEME">
-<code class="sig-name descname">CHANGE_THEME</code><em class="property"> = 1</em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_THEME" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.ChatSettingsType.CHANGE_THEME">
+<span class="sig-name descname"><span class="pre">CHANGE_THEME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#demuxfb.message.ChatSettingsType.CHANGE_THEME" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.EmptyMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">EmptyMessage</code><a class="headerlink" href="#demuxfb.message.EmptyMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.EmptyMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.EmptyMessage.content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="demuxfb.message.EmptyMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">EmptyMessage</span></span><a class="headerlink" href="#demuxfb.message.EmptyMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
+</dd></dl>
 
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.LinkMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">LinkMessage</span></span><a class="headerlink" href="#demuxfb.message.LinkMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.EmptyMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.EmptyMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.EmptyMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.EmptyMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.EmptyMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.EmptyMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.EmptyMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.EmptyMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.LinkMessage.shared_link">
+<span class="sig-name descname"><span class="pre">shared_link</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.LinkMessage.shared_link" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.LinkMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">LinkMessage</code><a class="headerlink" href="#demuxfb.message.LinkMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">MediaMessage</span></span><a class="headerlink" href="#demuxfb.message.MediaMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.LinkMessage.shared_link">
-<code class="sig-name descname">shared_link</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.LinkMessage.shared_link" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.attachment_files">
+<span class="sig-name descname"><span class="pre">attachment_files</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.AttachmentFile" title="demuxfb.media.AttachmentFile"><span class="pre">AttachmentFile</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.attachment_files" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.audio_files">
+<span class="sig-name descname"><span class="pre">audio_files</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.AudioFile" title="demuxfb.media.AudioFile"><span class="pre">AudioFile</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.audio_files" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.gifs">
+<span class="sig-name descname"><span class="pre">gifs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.Gif" title="demuxfb.media.Gif"><span class="pre">Gif</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.gifs" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.photos">
+<span class="sig-name descname"><span class="pre">photos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.Photo" title="demuxfb.media.Photo"><span class="pre">Photo</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.photos" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.stickers">
+<span class="sig-name descname"><span class="pre">stickers</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.Sticker" title="demuxfb.media.Sticker"><span class="pre">Sticker</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.stickers" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.MediaMessage.videos">
+<span class="sig-name descname"><span class="pre">videos</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="media.html#demuxfb.media.Video" title="demuxfb.media.Video"><span class="pre">Video</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.videos" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.MediaMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">MediaMessage</code><a class="headerlink" href="#demuxfb.message.MediaMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.Message">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">Message</span></span><a class="headerlink" href="#demuxfb.message.Message" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.attachment_files">
-<code class="sig-name descname">attachment_files</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.AttachmentFile" title="demuxfb.media.AttachmentFile">demuxfb.media.AttachmentFile</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.attachment_files" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.Message.content">
+<span class="sig-name descname"><span class="pre">content</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.Message.content" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.audio_files">
-<code class="sig-name descname">audio_files</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.AudioFile" title="demuxfb.media.AudioFile">demuxfb.media.AudioFile</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.audio_files" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.Message.message_json">
+<span class="sig-name descname"><span class="pre">message_json</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span></em><a class="headerlink" href="#demuxfb.message.Message.message_json" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.gifs">
-<code class="sig-name descname">gifs</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.Gif" title="demuxfb.media.Gif">demuxfb.media.Gif</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.gifs" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.Message.reactions">
+<span class="sig-name descname"><span class="pre">reactions</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="demuxfb.html#demuxfb.Reaction" title="demuxfb._reaction.Reaction"><span class="pre">Reaction</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.Message.reactions" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.photos">
-<code class="sig-name descname">photos</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.Photo" title="demuxfb.media.Photo">demuxfb.media.Photo</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.photos" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.Message.sender">
+<span class="sig-name descname"><span class="pre">sender</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.Message.sender" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.stickers">
-<code class="sig-name descname">stickers</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.Sticker" title="demuxfb.media.Sticker">demuxfb.media.Sticker</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.stickers" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.MediaMessage.videos">
-<code class="sig-name descname">videos</code><em class="property">: List<span class="p">[</span><a class="reference internal" href="media.html#demuxfb.media.Video" title="demuxfb.media.Video">demuxfb.media.Video</a><span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.MediaMessage.videos" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.Message.timestamp">
+<span class="sig-name descname"><span class="pre">timestamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#demuxfb.message.Message.timestamp" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.Message">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">Message</code><a class="headerlink" href="#demuxfb.message.Message" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
+<dt class="sig sig-object py" id="demuxfb.message.NicknameChangeMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">NicknameChangeMessage</span></span><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.Message.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.Message.content" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.NicknameChangeMessage.new_nickname">
+<span class="sig-name descname"><span class="pre">new_nickname</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.new_nickname" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.Message.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.Message.message_json" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.NicknameChangeMessage.setter">
+<span class="sig-name descname"><span class="pre">setter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.setter" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.Message.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.Message.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.Message.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.Message.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.Message.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.Message.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.NicknameChangeMessage.subject">
+<span class="sig-name descname"><span class="pre">subject</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.subject" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.NicknameChangeMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">NicknameChangeMessage</code><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PlanCreationMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PlanCreationMessage</span></span><a class="headerlink" href="#demuxfb.message.PlanCreationMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.PlanDeletionMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PlanDeletionMessage</span></span><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.NicknameChangeMessage.new_nickname">
-<code class="sig-name descname">new_nickname</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.new_nickname" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanDeletionMessage.plan_date_time">
+<span class="sig-name descname"><span class="pre">plan_date_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage.plan_date_time" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.NicknameChangeMessage.setter">
-<code class="sig-name descname">setter</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.setter" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.NicknameChangeMessage.subject">
-<code class="sig-name descname">subject</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.NicknameChangeMessage.subject" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanDeletionMessage.plan_title">
+<span class="sig-name descname"><span class="pre">plan_title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage.plan_title" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PlanCreationMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PlanCreationMessage</code><a class="headerlink" href="#demuxfb.message.PlanCreationMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PlanReminderMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PlanReminderMessage</span></span><a class="headerlink" href="#demuxfb.message.PlanReminderMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanCreationMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanCreationMessage.content" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanReminderMessage.is_concurrent">
+<span class="sig-name descname"><span class="pre">is_concurrent</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.is_concurrent" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanCreationMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.PlanCreationMessage.message_json" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanReminderMessage.plan_hour">
+<span class="sig-name descname"><span class="pre">plan_hour</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.plan_hour" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanCreationMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanCreationMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanCreationMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.PlanCreationMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanCreationMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.PlanCreationMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanReminderMessage.plan_title">
+<span class="sig-name descname"><span class="pre">plan_title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.plan_title" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PlanDeletionMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PlanDeletionMessage</code><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PlanRespondencyMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PlanRespondencyMessage</span></span><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.PlanUpdateMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PlanUpdateMessage</span></span><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanDeletionMessage.plan_date_time">
-<code class="sig-name descname">plan_date_time</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage.plan_date_time" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanUpdateMessage.new_plan_date_time">
+<span class="sig-name descname"><span class="pre">new_plan_date_time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage.new_plan_date_time" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanDeletionMessage.plan_title">
-<code class="sig-name descname">plan_title</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanDeletionMessage.plan_title" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PlanUpdateMessage.new_plan_title">
+<span class="sig-name descname"><span class="pre">new_plan_title</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage.new_plan_title" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PlanReminderMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PlanReminderMessage</code><a class="headerlink" href="#demuxfb.message.PlanReminderMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PollAddVoteMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PollAddVoteMessage</span></span><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanReminderMessage.is_concurrent">
-<code class="sig-name descname">is_concurrent</code><em class="property">: bool</em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.is_concurrent" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollAddVoteMessage.hidden_vote_count">
+<span class="sig-name descname"><span class="pre">hidden_vote_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.hidden_vote_count" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanReminderMessage.plan_hour">
-<code class="sig-name descname">plan_hour</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.plan_hour" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollAddVoteMessage.poll_name">
+<span class="sig-name descname"><span class="pre">poll_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.poll_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanReminderMessage.plan_title">
-<code class="sig-name descname">plan_title</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanReminderMessage.plan_title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="demuxfb.message.PlanRespondencyMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PlanRespondencyMessage</code><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanRespondencyMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage.content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanRespondencyMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanRespondencyMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanRespondencyMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PlanRespondencyMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.PlanRespondencyMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollAddVoteMessage.vote_option">
+<span class="sig-name descname"><span class="pre">vote_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.vote_option" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PlanUpdateMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PlanUpdateMessage</code><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PollChangeVoteMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PollChangeVoteMessage</span></span><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanUpdateMessage.new_plan_date_time">
-<code class="sig-name descname">new_plan_date_time</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage.new_plan_date_time" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollChangeVoteMessage.poll_name">
+<span class="sig-name descname"><span class="pre">poll_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage.poll_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PlanUpdateMessage.new_plan_title">
-<code class="sig-name descname">new_plan_title</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PlanUpdateMessage.new_plan_title" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="demuxfb.message.PollAddVoteMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PollAddVoteMessage</code><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.PollAddVoteMessage.hidden_vote_count">
-<code class="sig-name descname">hidden_vote_count</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.hidden_vote_count" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollAddVoteMessage.poll_name">
-<code class="sig-name descname">poll_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.poll_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollAddVoteMessage.vote_option">
-<code class="sig-name descname">vote_option</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollAddVoteMessage.vote_option" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollChangeVoteMessage.vote_option">
+<span class="sig-name descname"><span class="pre">vote_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage.vote_option" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PollChangeVoteMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PollChangeVoteMessage</code><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PollCreationMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PollCreationMessage</span></span><a class="headerlink" href="#demuxfb.message.PollCreationMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PollChangeVoteMessage.poll_name">
-<code class="sig-name descname">poll_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage.poll_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollChangeVoteMessage.vote_option">
-<code class="sig-name descname">vote_option</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollChangeVoteMessage.vote_option" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollCreationMessage.poll_name">
+<span class="sig-name descname"><span class="pre">poll_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollCreationMessage.poll_name" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PollCreationMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PollCreationMessage</code><a class="headerlink" href="#demuxfb.message.PollCreationMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.PollExpiredMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PollExpiredMessage</span></span><a class="headerlink" href="#demuxfb.message.PollExpiredMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.PollRemoveVoteMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">PollRemoveVoteMessage</span></span><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PollCreationMessage.poll_name">
-<code class="sig-name descname">poll_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollCreationMessage.poll_name" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.PollRemoveVoteMessage.hidden_vote_count">
+<span class="sig-name descname"><span class="pre">hidden_vote_count</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.hidden_vote_count" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.PollRemoveVoteMessage.poll_name">
+<span class="sig-name descname"><span class="pre">poll_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.poll_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="demuxfb.message.PollRemoveVoteMessage.vote_option">
+<span class="sig-name descname"><span class="pre">vote_option</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.vote_option" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PollExpiredMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PollExpiredMessage</code><a class="headerlink" href="#demuxfb.message.PollExpiredMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.SubscribeMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">SubscribeMessage</span></span><a class="headerlink" href="#demuxfb.message.SubscribeMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.PollExpiredMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PollExpiredMessage.content" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.SubscribeMessage.invitees">
+<span class="sig-name descname"><span class="pre">invitees</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#demuxfb.message.SubscribeMessage.invitees" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.PollExpiredMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.PollExpiredMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollExpiredMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.PollExpiredMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollExpiredMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.PollExpiredMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollExpiredMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.PollExpiredMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.SubscribeMessage.inviter">
+<span class="sig-name descname"><span class="pre">inviter</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.SubscribeMessage.inviter" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.PollRemoveVoteMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">PollRemoveVoteMessage</code><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.PollRemoveVoteMessage.hidden_vote_count">
-<code class="sig-name descname">hidden_vote_count</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.hidden_vote_count" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollRemoveVoteMessage.poll_name">
-<code class="sig-name descname">poll_name</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.poll_name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.PollRemoveVoteMessage.vote_option">
-<code class="sig-name descname">vote_option</code><em class="property">: str</em><a class="headerlink" href="#demuxfb.message.PollRemoveVoteMessage.vote_option" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<dt class="sig sig-object py" id="demuxfb.message.TextMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">TextMessage</span></span><a class="headerlink" href="#demuxfb.message.TextMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.SubscribeMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">SubscribeMessage</code><a class="headerlink" href="#demuxfb.message.SubscribeMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.SubscribeMessage.invitees">
-<code class="sig-name descname">invitees</code><em class="property">: List<span class="p">[</span>demuxfb._participant.Participant<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.SubscribeMessage.invitees" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.SubscribeMessage.inviter">
-<code class="sig-name descname">inviter</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.SubscribeMessage.inviter" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="demuxfb.message.TextMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">TextMessage</code><a class="headerlink" href="#demuxfb.message.TextMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.TextMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.TextMessage.content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.TextMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.TextMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.TextMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.TextMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.TextMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.TextMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.TextMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.TextMessage.timestamp" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt id="demuxfb.message.UnrecognizedMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">UnrecognizedMessage</code><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
+<dt class="sig sig-object py" id="demuxfb.message.UnrecognizedMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">UnrecognizedMessage</span></span><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <p>Instances of this class are generated when a JSON message does not match any
 existing rules.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="demuxfb.message.UnsubscribeMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">UnsubscribeMessage</span></span><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 <dl class="py attribute">
-<dt id="demuxfb.message.UnrecognizedMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage.content" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.UnsubscribeMessage.removalist">
+<span class="sig-name descname"><span class="pre">removalist</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removalist" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.UnrecognizedMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage.message_json" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.UnsubscribeMessage.removed">
+<span class="sig-name descname"><span class="pre">removed</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="demuxfb.html#demuxfb.Participant" title="demuxfb._participant.Participant"><span class="pre">Participant</span></a></em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removed" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="demuxfb.message.UnrecognizedMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.UnrecognizedMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.UnrecognizedMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.UnrecognizedMessage.timestamp" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="demuxfb.message.UnsubscribeMessage.removed_self">
+<span class="sig-name descname"><span class="pre">removed_self</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removed_self" title="Link to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
-<dt id="demuxfb.message.UnsubscribeMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">UnsubscribeMessage</code><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.UnsubscribeMessage.removalist">
-<code class="sig-name descname">removalist</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removalist" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.UnsubscribeMessage.removed">
-<code class="sig-name descname">removed</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.UnsubscribeMessage.removed_self">
-<code class="sig-name descname">removed_self</code><em class="property">: bool</em><a class="headerlink" href="#demuxfb.message.UnsubscribeMessage.removed_self" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
+<dt class="sig sig-object py" id="demuxfb.message.WaveMessage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">demuxfb.message.</span></span><span class="sig-name descname"><span class="pre">WaveMessage</span></span><a class="headerlink" href="#demuxfb.message.WaveMessage" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message</span></code></a></p>
 </dd></dl>
 
-<dl class="py class">
-<dt id="demuxfb.message.WaveMessage">
-<em class="property">class </em><code class="sig-prename descclassname">demuxfb.message.</code><code class="sig-name descname">WaveMessage</code><a class="headerlink" href="#demuxfb.message.WaveMessage" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#demuxfb.message.Message" title="demuxfb.message.Message"><code class="xref py py-class docutils literal notranslate"><span class="pre">demuxfb.message.Message</span></code></a></p>
-<dl class="py attribute">
-<dt id="demuxfb.message.WaveMessage.content">
-<code class="sig-name descname">content</code><em class="property">: Optional<span class="p">[</span>str<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.WaveMessage.content" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.WaveMessage.message_json">
-<code class="sig-name descname">message_json</code><em class="property">: dict</em><a class="headerlink" href="#demuxfb.message.WaveMessage.message_json" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.WaveMessage.reactions">
-<code class="sig-name descname">reactions</code><em class="property">: List<span class="p">[</span>demuxfb._reaction.Reaction<span class="p">]</span></em><a class="headerlink" href="#demuxfb.message.WaveMessage.reactions" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.WaveMessage.sender">
-<code class="sig-name descname">sender</code><em class="property">: demuxfb._participant.Participant</em><a class="headerlink" href="#demuxfb.message.WaveMessage.sender" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="demuxfb.message.WaveMessage.timestamp">
-<code class="sig-name descname">timestamp</code><em class="property">: int</em><a class="headerlink" href="#demuxfb.message.WaveMessage.timestamp" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-</div>
+</section>
 
 
       </div>
@@ -751,8 +550,8 @@ existing rules.</p>
       </div>
 
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2021, Nicholas Killeen.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.1.
+    &#169; Copyright 2021, Nicholas Killeen.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
     </div>
   </body>
 </html>

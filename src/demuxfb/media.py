@@ -48,7 +48,6 @@ class Video:
     def __init__(self, video_json: dict) -> None:
         """This method should not be called publicly."""
         self.uri = video_json['uri']
-        self.thumbnail_uri = video_json['thumbnail']['uri']
         self.creation_timestamp = int(video_json['creation_timestamp']) * 1000
 
 

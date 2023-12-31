@@ -9,7 +9,7 @@ setuptools.setup(
     name='demuxfb',
     # Date of Facebook 'Download Your Information' data archive creation this
     # is built against.
-    version='2020-12-15',
+    version='2023-12-31',
     author='Nicholas Killeen',
     author_email='nicholas.killeen2@gmail.com',
     description='Parse Facebook Conversation Archives',
